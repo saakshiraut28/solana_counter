@@ -1,6 +1,7 @@
 import { IdlAccounts, Program } from "@coral-xyz/anchor";
 import { IDL, Counter } from "./idl";
 import { clusterApiUrl, Connection, PublicKey } from "@solana/web3.js";
+import { Buffer } from 'buffer';
 
 const programId = new PublicKey("ARvEkVp3yEwfAyLxRrEqCULMgNJBHNGjwSdEqSwDgCQ5");
 
