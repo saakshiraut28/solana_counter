@@ -1,5 +1,5 @@
 /** @format */
-
+import "buffer-browserify";
 import { useState } from "react";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import { program } from "../anchor/setup";
