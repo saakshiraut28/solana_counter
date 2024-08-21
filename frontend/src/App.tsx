@@ -1,5 +1,4 @@
 /** @format */
-import "buffer-browserify";
 import { useMemo } from "react";
 import {
   ConnectionProvider,
