@@ -1,12 +1,14 @@
 /** @format */
 
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import App from "./App.tsx";
-import "./index.css";
+import { Buffer } from "buffer";
 
-createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+if (!window.Buffer) {
+  window.Buffer = Buffer;
+}
+
+// Your existing imports and code
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+
+ReactDOM.render(<App />, document.getElementById("root"));
